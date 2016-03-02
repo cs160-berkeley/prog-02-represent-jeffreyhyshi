@@ -1,20 +1,24 @@
 # PROG 02: Represent!
 
-Briefly describe your app here.
+It does the things that it's supposed to, without searing out your eyes.
 
 ## Authors
 
-FirstName LastName ([your_email@berkeley.edu](mailto:your_email@berkeley.edu))
+Jeffrey Shi ([jeffster888@berkeley.edu](mailto:jeffster888@berkeley.edu))
 
 ## Demo Video
 
-See [your demo video title here] (https://link_to_your_video)
+See [Represent!](https://youtu.be/vOD1yYuxdQg) in action
 
 ## Screenshots
 
 <img src="screenshots/main.png" height="400" alt="Screenshot"/>
+<img src="screenshots/congressiona.png" height="400" alt="Screenshot"/>
+<img src="screenshots/detail.png" height="400" alt="Screenshot"/>
+<img src="screenshots/2012_vote.png" height="400" alt="Screenshot"/>
+<img src="screenshots/watch_main.png" height="400" alt="Screenshot"/>
 
 ## Acknowledgments
 
-* Hat tip to anyone who's code was used
-* Any other support
+* Hat tip to Kanye for Ultralight Beam
+* thanks to the noon, joleary, & diane 4 slides & the starter code
