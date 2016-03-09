@@ -10,6 +10,8 @@ import android.os.Bundle;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.io.InputStream;
+
 public class WelcomeActivity extends AppCompatActivity {
 
 
@@ -45,6 +47,8 @@ public class WelcomeActivity extends AppCompatActivity {
                 return true;
             }
         });
+
+
     }
 
     private void startListCandidatesActivity(int zip) {
@@ -56,5 +60,7 @@ public class WelcomeActivity extends AppCompatActivity {
         Intent intent = new Intent(this, ListCandidatesActivity.class);
         intent.putExtra("location", zip);
         startActivity(intent);
+
+
     }
 }
