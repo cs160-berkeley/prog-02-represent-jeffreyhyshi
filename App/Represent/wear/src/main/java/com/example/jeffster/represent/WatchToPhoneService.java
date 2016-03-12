@@ -68,14 +68,13 @@ public class WatchToPhoneService extends Service {
         final String data;
 
         if (intent != null) {
-            if (intent.hasExtra("candidate_name")) {
+            if (intent.hasExtra("json_object")) {
                 Bundle extras = intent.getExtras();
-                candidateName = extras.getString("candidate_name");
                 path = "/change_detail_view";
-                data = candidateName;
-            } else if (intent.hasExtra("location_string")) {
+                data = extras.getString("json_object");
+            } else if (intent.hasExtra("new_loc")) {
                 Bundle extras = intent.getExtras();
-                locationString = extras.getString("location_string");
+                locationString = extras.getString("new_loc");
                 path = "/change_list_view";
                 data = locationString;
             } else {

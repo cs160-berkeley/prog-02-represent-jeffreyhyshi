@@ -4,10 +4,9 @@
     android:layout_height="match_parent"
     tools:context="layout.CongressmanFragment">
 
-
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="98dp"
+        android:layout_height="match_parent"
         android:layout_gravity="center_horizontal|bottom"
         android:background="#eeeeee">
 
@@ -16,33 +15,28 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="70dp"
             android:text="Jobe Jobersom"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:textColor="#222222" />
 
-        <LinearLayout
-            android:id="@+id/affiliation_circle"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_below="@id/name"
+
+        <TextView
+            android:id="@+id/affiliation"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/circle"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/affiliation"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal|center_vertical"
-                android:layout_marginTop="7dp"
-                android:text="D"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textColor="#222222" />
-
-        </LinearLayout>
+            android:gravity="center"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/circle_red"
+            android:layout_below="@+id/name"
+            android:text="R"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#eeeeee" />
 
 
     </RelativeLayout>
+
+
 </FrameLayout>

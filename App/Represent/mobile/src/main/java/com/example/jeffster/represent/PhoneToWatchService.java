@@ -53,10 +53,10 @@ public class PhoneToWatchService extends Service {
         final String data;
 
         if (intent != null) {
-            if (intent.hasExtra("location_string")) {
+            if (intent.hasExtra("json_object")) {
                 Bundle extras = intent.getExtras();
-                path = "/set_location";
-                data = extras.getString("location_string");
+                path = "/got_data";
+                data = extras.getString("json_object");
             } else {
                 path = "/";
                 data = "";

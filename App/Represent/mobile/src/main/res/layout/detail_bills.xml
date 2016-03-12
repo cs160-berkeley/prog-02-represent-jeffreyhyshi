@@ -14,6 +14,12 @@
         android:layout_gravity="end"
         android:id="@+id/textView4" />
 
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bills_progress"
+        android:layout_gravity="center_horizontal" />
+
     <!-- items to be populated programmatically -->
 
 </LinearLayout>

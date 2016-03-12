@@ -8,7 +8,7 @@
     <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingTop="15dp"
         android:background="#dddddd"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         tools:context="com.example.jeffster.represent.DetailActivity"
@@ -16,19 +16,33 @@
 
         <TextView
             android:id="@+id/detail_affiliation"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/circle_grey"
+            android:gravity="center"
+            android:textColor="#eeeeee"
+            android:text="I" />
+
+        <TextView
+            android:id="@+id/detail_location"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_toEndOf="@id/detail_affiliation"
+            android:layout_alignParentTop="true"
+            android:gravity="center_vertical"
             android:layout_marginStart="10dp"
-            android:text="D - Vermillinois" />
+            android:text="Vermillinois" />
 
         <TextView
             android:id="@+id/detail_term"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="25dp"
+            android:gravity="center_vertical"
             android:layout_alignParentEnd="true"
-            android:layout_alignParentTop="true"
+            android:layout_alignBottom="@id/detail_location"
             android:layout_marginEnd="10dp"
             android:text="2012-2016" />
 
@@ -38,7 +52,7 @@
             android:layout_height="fill_parent"
             android:layout_width="fill_parent"
             android:layout_below="@+id/detail_term"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="15dp"
             android:paddingTop="10dp"
             layout="@layout/detail_committees" />
 

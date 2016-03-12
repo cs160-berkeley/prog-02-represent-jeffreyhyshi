@@ -8,6 +8,9 @@ import android.widget.Toast;
 import com.google.android.gms.wearable.MessageEvent;
 import com.google.android.gms.wearable.WearableListenerService;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.nio.charset.StandardCharsets;
 
 /**
@@ -30,15 +33,11 @@ public class PhoneListenerService extends WearableListenerService {
             //Start a new activity
             Intent intent = new Intent(this, DetailActivity.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            intent.putExtra("congressman_name", value);
+            intent.putExtra("json_object", value);
             startActivity(intent);
         } else if ( messageEvent.getPath().equalsIgnoreCase(CHANGE_LIST_VIEW) ) {
-            int zip = Integer.parseInt(new String(messageEvent.getData(), StandardCharsets.UTF_8));
-
-            Intent intent = new Intent(this, ListCandidatesActivity.class);
-            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            intent.putExtra("location", zip);
-            startActivity(intent);
+            Intent intent = new Intent(this, RandomLocationService.class);
+            startService(intent);
         } else {
             super.onMessageReceived( messageEvent );
         }

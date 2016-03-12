@@ -85,6 +85,22 @@ public class ElectionFragment extends Fragment {
         redPercentView.setText(Integer.toString(redPercent) + "%");
         bluePercentView.setText(Integer.toString(100 - redPercent) + "%");
 
+        //Get the display width
+        WindowManager wm = (WindowManager) getActivity().getSystemService(Context.WINDOW_SERVICE);
+        Display display = wm.getDefaultDisplay();
+        DisplayMetrics metrics = new DisplayMetrics();
+        display.getMetrics(metrics);
+        int width = metrics.widthPixels;
+
+        View redView = view.findViewById(R.id.red);
+        View blueView = view.findViewById(R.id.blue);
+
+        ViewGroup.LayoutParams redParams = redView.getLayoutParams();
+        ViewGroup.LayoutParams blueParams = blueView.getLayoutParams();
+        redParams.width = Math.round( (((float) redPercent) / 100) * width );
+        blueParams.width = Math.round( (((float) 100 - redPercent) / 100) * width );
+        redView.setLayoutParams(redParams);
+        blueView.setLayoutParams(blueParams);
 
         return view;
     }
@@ -105,23 +121,6 @@ public class ElectionFragment extends Fragment {
             throw new RuntimeException(context.toString()
                     + " must implement OnFragmentInteractionListener");
         }
-
-        //Get the display width
-        WindowManager wm = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
-        Display display = wm.getDefaultDisplay();
-        DisplayMetrics metrics = new DisplayMetrics();
-        display.getMetrics(metrics);
-        int width = metrics.widthPixels;
-
-        View redView = getActivity().findViewById(R.id.red);
-        View blueView = getActivity().findViewById(R.id.blue);
-
-        ViewGroup.LayoutParams redParams = redView.getLayoutParams();
-        ViewGroup.LayoutParams blueParams = blueView.getLayoutParams();
-        redParams.width = Math.round( (((float) redPercent) / 100) * width );
-        blueParams.width = Math.round( (((float) 100 - redPercent) / 100) * width );
-        redView.setLayoutParams(blueParams);
-        blueView.setLayoutParams(redParams);
 
     }
 
