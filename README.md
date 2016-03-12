@@ -8,15 +8,15 @@ Jeffrey Shi (jeffreyhyshi) ([jeffster888@berkeley.edu](mailto:jeffster888@berkel
 
 ## Demo Video
 
-See [Represent!](https://youtu.be/vOD1yYuxdQg) in action
+See [Represent!](https://youtu.be/MaHlIHbE8ak) in action. WAIT THERE'S MORE SEE [REPRESENT!](https://youtu.be/Dfw2cW-dn9k) in EVEN MORE ACTION.
 
 ## Screenshots
 
-<img src="screenshots/main.png" height="400" alt="Screenshot"/>
-<img src="screenshots/congressional.png" height="400" alt="Screenshot"/>
-<img src="screenshots/detail.png" height="400" alt="Screenshot"/>
-<img src="screenshots/2012_vote.png" height="200" alt="Screenshot"/>
-<img src="screenshots/watch_main.png" height="200" alt="Screenshot"/>
+<img src="screenshotsnew/welcome.png" height="400" alt="Screenshot"/>
+<img src="screenshotsnew/list.png" height="400" alt="Screenshot"/>
+<img src="screenshotsnew/detail.png" height="400" alt="Screenshot"/>
+<img src="screenshotsnew/vote.png" height="200" alt="Screenshot"/>
+<img src="screenshotsnew/congressman.png" height="200" alt="Screenshot"/>
 
 ## Acknowledgments
 
